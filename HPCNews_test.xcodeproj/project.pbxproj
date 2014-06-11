@@ -1,0 +1,777 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2152183A17544FE40037DA7E /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152183917544FE30037DA7E /* Social.framework */; };
+		2152183C17544FEE0037DA7E /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152183B17544FEE0037DA7E /* Twitter.framework */; };
+		2152183E17544FF80037DA7E /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2152183D17544FF80037DA7E /* Accounts.framework */; };
+		216F4082162D06D000E046F1 /* twitter-bird-light-bgs.png in Resources */ = {isa = PBXBuildFile; fileRef = 216F4081162D06D000E046F1 /* twitter-bird-light-bgs.png */; };
+		216F4084162D07CF00E046F1 /* twitter-bird-dark-bgs.png in Resources */ = {isa = PBXBuildFile; fileRef = 216F4083162D07CF00E046F1 /* twitter-bird-dark-bgs.png */; };
+		217417CF15F7165F00C3FC9A /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217417CE15F7165F00C3FC9A /* MessageUI.framework */; };
+		217417D315F7239700C3FC9A /* HPCNewsFinderBData.m in Sources */ = {isa = PBXBuildFile; fileRef = 217417D215F7239600C3FC9A /* HPCNewsFinderBData.m */; };
+		217417D615F7250000C3FC9A /* HPCNewsCellBData.m in Sources */ = {isa = PBXBuildFile; fileRef = 217417D515F724FF00C3FC9A /* HPCNewsCellBData.m */; };
+		217417DA15F725D000C3FC9A /* NewsBData.m in Sources */ = {isa = PBXBuildFile; fileRef = 217417D815F725CD00C3FC9A /* NewsBData.m */; };
+		217417DB15F725D000C3FC9A /* NewsBData.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217417D915F725CE00C3FC9A /* NewsBData.xib */; };
+		218763EE1443A2CB00F38AF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218763ED1443A2CB00F38AF7 /* UIKit.framework */; };
+		218763F01443A2CB00F38AF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218763EF1443A2CB00F38AF7 /* Foundation.framework */; };
+		218763F21443A2CB00F38AF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218763F11443A2CB00F38AF7 /* CoreGraphics.framework */; };
+		218763F81443A2CB00F38AF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 218763F61443A2CB00F38AF7 /* InfoPlist.strings */; };
+		218763FA1443A2CB00F38AF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 218763F91443A2CB00F38AF7 /* main.m */; };
+		218763FE1443A2CB00F38AF7 /* HPCNews_testAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 218763FD1443A2CB00F38AF7 /* HPCNews_testAppDelegate.m */; };
+		218764011443A2CB00F38AF7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218763FF1443A2CB00F38AF7 /* MainWindow.xib */; };
+		2187640F1443A2CB00F38AF7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2187640E1443A2CB00F38AF7 /* SenTestingKit.framework */; };
+		218764101443A2CB00F38AF7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218763ED1443A2CB00F38AF7 /* UIKit.framework */; };
+		218764111443A2CB00F38AF7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218763EF1443A2CB00F38AF7 /* Foundation.framework */; };
+		218764121443A2CB00F38AF7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 218763F11443A2CB00F38AF7 /* CoreGraphics.framework */; };
+		2187641A1443A2CB00F38AF7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 218764181443A2CB00F38AF7 /* InfoPlist.strings */; };
+		2187641C1443A2CB00F38AF7 /* HPCNews_testTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 2187641B1443A2CB00F38AF7 /* HPCNews_testTests.h */; };
+		2187641E1443A2CB00F38AF7 /* HPCNews_testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187641D1443A2CB00F38AF7 /* HPCNews_testTests.m */; };
+		218764341443A3C800F38AF7 /* bestnews.m in Sources */ = {isa = PBXBuildFile; fileRef = 218764281443A3C800F38AF7 /* bestnews.m */; };
+		218764351443A3C800F38AF7 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187642A1443A3C800F38AF7 /* DetailViewController.m */; };
+		218764361443A3C800F38AF7 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2187642B1443A3C800F38AF7 /* DetailViewController.xib */; };
+		218764371443A3C800F38AF7 /* HPCNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187642D1443A3C800F38AF7 /* HPCNewsCell.m */; };
+		218764381443A3C800F38AF7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187642F1443A3C800F38AF7 /* RootViewController.m */; };
+		218764391443A3C800F38AF7 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218764301443A3C800F38AF7 /* RootViewController.xib */; };
+		2187643A1443A3C800F38AF7 /* TwitterConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 218764321443A3C800F38AF7 /* TwitterConnection.m */; };
+		2187643E1443A42A00F38AF7 /* HPCNewsFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2187643D1443A42A00F38AF7 /* HPCNewsFinder.m */; };
+		21896509144F78C800D77C55 /* hpcicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 21896508144F78C800D77C55 /* hpcicon.png */; };
+		2189650D144F78FE00D77C55 /* hpcicon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2189650C144F78FE00D77C55 /* hpcicon@2x.png */; };
+		21896513144F7AFD00D77C55 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 21896512144F7AFD00D77C55 /* iTunesArtwork.png */; };
+		218D06521463AB9100E80A05 /* 56-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = 218D06511463AB9100E80A05 /* 56-cloud.png */; };
+		218D06541463ABA700E80A05 /* 64-zap.png in Resources */ = {isa = PBXBuildFile; fileRef = 218D06531463ABA700E80A05 /* 64-zap.png */; };
+		218D06561463AC0D00E80A05 /* 09-chat-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 218D06551463AC0D00E80A05 /* 09-chat-2.png */; };
+		2190EF081464773500F90C3A /* HPCNewsCellFav.m in Sources */ = {isa = PBXBuildFile; fileRef = 2190EF071464773400F90C3A /* HPCNewsCellFav.m */; };
+		2195134E15A78C5A000B781B /* HPCNewsCellFeedWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195134B15A78C59000B781B /* HPCNewsCellFeedWire.m */; };
+		2195134F15A78C5A000B781B /* HPCNewsFinderFeedWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195134D15A78C5A000B781B /* HPCNewsFinderFeedWire.m */; };
+		2195135415A78D7F000B781B /* NewsFeedWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195135215A78D7E000B781B /* NewsFeedWire.m */; };
+		2195135515A78D7F000B781B /* NewsFeedWire.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2195135315A78D7E000B781B /* NewsFeedWire.xib */; };
+		2195135615A7934D000B781B /* NewsFeedWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195135215A78D7E000B781B /* NewsFeedWire.m */; };
+		2195135715A793A8000B781B /* HPCNewsFinderFeedWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195134D15A78C5A000B781B /* HPCNewsFinderFeedWire.m */; };
+		2195135815A793D7000B781B /* HPCNewsCellFeedWire.m in Sources */ = {isa = PBXBuildFile; fileRef = 2195134B15A78C59000B781B /* HPCNewsCellFeedWire.m */; };
+		2197A626175827D9004B5A41 /* hpclaunchImage-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2197A620175827D9004B5A41 /* hpclaunchImage-568h@2x.png */; };
+		2197A627175827D9004B5A41 /* hpclaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2197A622175827D9004B5A41 /* hpclaunchImage.png */; };
+		2197A628175827D9004B5A41 /* hpclaunchImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2197A624175827D9004B5A41 /* hpclaunchImage@2x.png */; };
+		21AA2C3A145E88C100BCD448 /* Favorites.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AA2C38145E88C100BCD448 /* Favorites.m */; };
+		21AA2C3B145E88C100BCD448 /* Favorites.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21AA2C39145E88C100BCD448 /* Favorites.xib */; };
+		21AA2C45145E88FF00BCD448 /* NewsFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AA2C43145E88FF00BCD448 /* NewsFeed.m */; };
+		21AA2C46145E88FF00BCD448 /* NewsFeed.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21AA2C44145E88FF00BCD448 /* NewsFeed.xib */; };
+		21CAA832144BCB99008D53D2 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CAA831144BCB99008D53D2 /* iAd.framework */; };
+		21CBA160145F46210000624E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CBA15F145F46200000624E /* MapKit.framework */; };
+		21CBA162145F46800000624E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21CBA161145F46800000624E /* CoreLocation.framework */; };
+		21D2A91C1450CF85005BC720 /* NewsstandKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21D2A91B1450CF85005BC720 /* NewsstandKit.framework */; };
+		21DD6A02145F0C5500FC49E4 /* HPCNewsCellFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD69FF145F0C5500FC49E4 /* HPCNewsCellFeed.m */; };
+		21DD6A03145F0C5500FC49E4 /* HPCNewsFinderFeed.m in Sources */ = {isa = PBXBuildFile; fileRef = 21DD6A01145F0C5500FC49E4 /* HPCNewsFinderFeed.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		218764131443A2CB00F38AF7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 218763E01443A2CB00F38AF7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 218763E81443A2CB00F38AF7;
+			remoteInfo = HPCNews_test;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2152183917544FE30037DA7E /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		2152183B17544FEE0037DA7E /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		2152183D17544FF80037DA7E /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		216F4081162D06D000E046F1 /* twitter-bird-light-bgs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-bird-light-bgs.png"; sourceTree = "<group>"; };
+		216F4083162D07CF00E046F1 /* twitter-bird-dark-bgs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "twitter-bird-dark-bgs.png"; sourceTree = "<group>"; };
+		217417CE15F7165F00C3FC9A /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		217417D115F7239500C3FC9A /* HPCNewsFinderBData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsFinderBData.h; sourceTree = "<group>"; };
+		217417D215F7239600C3FC9A /* HPCNewsFinderBData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsFinderBData.m; sourceTree = "<group>"; };
+		217417D415F724FE00C3FC9A /* HPCNewsCellBData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsCellBData.h; sourceTree = "<group>"; };
+		217417D515F724FF00C3FC9A /* HPCNewsCellBData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsCellBData.m; sourceTree = "<group>"; };
+		217417D715F725CD00C3FC9A /* NewsBData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBData.h; sourceTree = "<group>"; };
+		217417D815F725CD00C3FC9A /* NewsBData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBData.m; sourceTree = "<group>"; };
+		217417D915F725CE00C3FC9A /* NewsBData.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsBData.xib; sourceTree = "<group>"; };
+		218763E91443A2CB00F38AF7 /* Instant HPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Instant HPC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		218763ED1443A2CB00F38AF7 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		218763EF1443A2CB00F38AF7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		218763F11443A2CB00F38AF7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		218763F51443A2CB00F38AF7 /* HPCNews_test-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HPCNews_test-Info.plist"; sourceTree = "<group>"; };
+		218763F71443A2CB00F38AF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		218763F91443A2CB00F38AF7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		218763FB1443A2CB00F38AF7 /* HPCNews_test-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HPCNews_test-Prefix.pch"; sourceTree = "<group>"; };
+		218763FC1443A2CB00F38AF7 /* HPCNews_testAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPCNews_testAppDelegate.h; sourceTree = "<group>"; };
+		218763FD1443A2CB00F38AF7 /* HPCNews_testAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPCNews_testAppDelegate.m; sourceTree = "<group>"; };
+		218764001443A2CB00F38AF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		2187640D1443A2CB00F38AF7 /* HPCNews_testTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPCNews_testTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2187640E1443A2CB00F38AF7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		218764171443A2CB00F38AF7 /* HPCNews_testTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HPCNews_testTests-Info.plist"; sourceTree = "<group>"; };
+		218764191443A2CB00F38AF7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2187641B1443A2CB00F38AF7 /* HPCNews_testTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HPCNews_testTests.h; sourceTree = "<group>"; };
+		2187641D1443A2CB00F38AF7 /* HPCNews_testTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPCNews_testTests.m; sourceTree = "<group>"; };
+		218764271443A3C800F38AF7 /* bestnews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bestnews.h; sourceTree = "<group>"; };
+		218764281443A3C800F38AF7 /* bestnews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bestnews.m; sourceTree = "<group>"; };
+		218764291443A3C800F38AF7 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		2187642A1443A3C800F38AF7 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		2187642B1443A3C800F38AF7 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+		2187642C1443A3C800F38AF7 /* HPCNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsCell.h; sourceTree = "<group>"; };
+		2187642D1443A3C800F38AF7 /* HPCNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsCell.m; sourceTree = "<group>"; };
+		2187642E1443A3C800F38AF7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		2187642F1443A3C800F38AF7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		218764301443A3C800F38AF7 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		218764311443A3C800F38AF7 /* TwitterConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterConnection.h; sourceTree = "<group>"; };
+		218764321443A3C800F38AF7 /* TwitterConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterConnection.m; sourceTree = "<group>"; };
+		2187643C1443A42A00F38AF7 /* HPCNewsFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsFinder.h; sourceTree = "<group>"; };
+		2187643D1443A42A00F38AF7 /* HPCNewsFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsFinder.m; sourceTree = "<group>"; };
+		21896508144F78C800D77C55 /* hpcicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hpcicon.png; sourceTree = "<group>"; };
+		2189650A144F78DE00D77C55 /* hpclaunchImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hpclaunchImage@2x.png"; sourceTree = "<group>"; };
+		2189650C144F78FE00D77C55 /* hpcicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hpcicon@2x.png"; sourceTree = "<group>"; };
+		21896512144F7AFD00D77C55 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		218D06511463AB9100E80A05 /* 56-cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "56-cloud.png"; sourceTree = "<group>"; };
+		218D06531463ABA700E80A05 /* 64-zap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "64-zap.png"; sourceTree = "<group>"; };
+		218D06551463AC0D00E80A05 /* 09-chat-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "09-chat-2.png"; sourceTree = "<group>"; };
+		2190EF061464773300F90C3A /* HPCNewsCellFav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsCellFav.h; sourceTree = "<group>"; };
+		2190EF071464773400F90C3A /* HPCNewsCellFav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsCellFav.m; sourceTree = "<group>"; };
+		2190EF0A14647DF900F90C3A /* hpcicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hpcicon.png; sourceTree = "<group>"; };
+		2190EF0B14647DFA00F90C3A /* hpcicon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hpcicon@2x.png"; sourceTree = "<group>"; };
+		2190EF0D14647DFC00F90C3A /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		2195134A15A78C59000B781B /* HPCNewsCellFeedWire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsCellFeedWire.h; sourceTree = "<group>"; };
+		2195134B15A78C59000B781B /* HPCNewsCellFeedWire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsCellFeedWire.m; sourceTree = "<group>"; };
+		2195134C15A78C59000B781B /* HPCNewsFinderFeedWire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsFinderFeedWire.h; sourceTree = "<group>"; };
+		2195134D15A78C5A000B781B /* HPCNewsFinderFeedWire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsFinderFeedWire.m; sourceTree = "<group>"; };
+		2195135115A78D7D000B781B /* NewsFeedWire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeedWire.h; sourceTree = "<group>"; };
+		2195135215A78D7E000B781B /* NewsFeedWire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeedWire.m; sourceTree = "<group>"; };
+		2195135315A78D7E000B781B /* NewsFeedWire.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeedWire.xib; sourceTree = "<group>"; };
+		2197A621175827D9004B5A41 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/hpclaunchImage-568h@2x.png"; sourceTree = "<group>"; };
+		2197A623175827D9004B5A41 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = en.lproj/hpclaunchImage.png; sourceTree = "<group>"; };
+		2197A625175827D9004B5A41 /* en */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = en; path = "en.lproj/hpclaunchImage@2x.png"; sourceTree = "<group>"; };
+		21AA2C37145E88C100BCD448 /* Favorites.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorites.h; sourceTree = "<group>"; };
+		21AA2C38145E88C100BCD448 /* Favorites.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorites.m; sourceTree = "<group>"; };
+		21AA2C39145E88C100BCD448 /* Favorites.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Favorites.xib; sourceTree = "<group>"; };
+		21AA2C42145E88FF00BCD448 /* NewsFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsFeed.h; sourceTree = "<group>"; };
+		21AA2C43145E88FF00BCD448 /* NewsFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsFeed.m; sourceTree = "<group>"; };
+		21AA2C44145E88FF00BCD448 /* NewsFeed.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsFeed.xib; sourceTree = "<group>"; };
+		21CAA831144BCB99008D53D2 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		21CBA15F145F46200000624E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		21CBA161145F46800000624E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		21D2A91B1450CF85005BC720 /* NewsstandKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NewsstandKit.framework; path = System/Library/Frameworks/NewsstandKit.framework; sourceTree = SDKROOT; };
+		21DD69FE145F0C5500FC49E4 /* HPCNewsCellFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsCellFeed.h; sourceTree = "<group>"; };
+		21DD69FF145F0C5500FC49E4 /* HPCNewsCellFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsCellFeed.m; sourceTree = "<group>"; };
+		21DD6A00145F0C5500FC49E4 /* HPCNewsFinderFeed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPCNewsFinderFeed.h; sourceTree = "<group>"; };
+		21DD6A01145F0C5500FC49E4 /* HPCNewsFinderFeed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPCNewsFinderFeed.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		218763E61443A2CB00F38AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2152183E17544FF80037DA7E /* Accounts.framework in Frameworks */,
+				2152183C17544FEE0037DA7E /* Twitter.framework in Frameworks */,
+				2152183A17544FE40037DA7E /* Social.framework in Frameworks */,
+				217417CF15F7165F00C3FC9A /* MessageUI.framework in Frameworks */,
+				21CBA162145F46800000624E /* CoreLocation.framework in Frameworks */,
+				21CBA160145F46210000624E /* MapKit.framework in Frameworks */,
+				21D2A91C1450CF85005BC720 /* NewsstandKit.framework in Frameworks */,
+				21CAA832144BCB99008D53D2 /* iAd.framework in Frameworks */,
+				218763EE1443A2CB00F38AF7 /* UIKit.framework in Frameworks */,
+				218763F01443A2CB00F38AF7 /* Foundation.framework in Frameworks */,
+				218763F21443A2CB00F38AF7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		218764091443A2CB00F38AF7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2187640F1443A2CB00F38AF7 /* SenTestingKit.framework in Frameworks */,
+				218764101443A2CB00F38AF7 /* UIKit.framework in Frameworks */,
+				218764111443A2CB00F38AF7 /* Foundation.framework in Frameworks */,
+				218764121443A2CB00F38AF7 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		217E182C1756D66300A792F0 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				216F4081162D06D000E046F1 /* twitter-bird-light-bgs.png */,
+				2197A620175827D9004B5A41 /* hpclaunchImage-568h@2x.png */,
+				2197A622175827D9004B5A41 /* hpclaunchImage.png */,
+				2197A624175827D9004B5A41 /* hpclaunchImage@2x.png */,
+				218D06531463ABA700E80A05 /* 64-zap.png */,
+				2190EF0B14647DFA00F90C3A /* hpcicon@2x.png */,
+				2190EF0D14647DFC00F90C3A /* iTunesArtwork.png */,
+				216F4083162D07CF00E046F1 /* twitter-bird-dark-bgs.png */,
+				2190EF0A14647DF900F90C3A /* hpcicon.png */,
+				218D06511463AB9100E80A05 /* 56-cloud.png */,
+				218D06551463AC0D00E80A05 /* 09-chat-2.png */,
+			);
+			name = png;
+			sourceTree = "<group>";
+		};
+		218763DE1443A2CB00F38AF7 = {
+			isa = PBXGroup;
+			children = (
+				218763F31443A2CB00F38AF7 /* HPCNews_test */,
+				218764151443A2CB00F38AF7 /* HPCNews_testTests */,
+				218763EC1443A2CB00F38AF7 /* Frameworks */,
+				218763EA1443A2CB00F38AF7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		218763EA1443A2CB00F38AF7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				218763E91443A2CB00F38AF7 /* Instant HPC.app */,
+				2187640D1443A2CB00F38AF7 /* HPCNews_testTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		218763EC1443A2CB00F38AF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2152183D17544FF80037DA7E /* Accounts.framework */,
+				2152183B17544FEE0037DA7E /* Twitter.framework */,
+				2152183917544FE30037DA7E /* Social.framework */,
+				217417CE15F7165F00C3FC9A /* MessageUI.framework */,
+				21CBA161145F46800000624E /* CoreLocation.framework */,
+				21CBA15F145F46200000624E /* MapKit.framework */,
+				21D2A91B1450CF85005BC720 /* NewsstandKit.framework */,
+				21CAA831144BCB99008D53D2 /* iAd.framework */,
+				218763ED1443A2CB00F38AF7 /* UIKit.framework */,
+				218763EF1443A2CB00F38AF7 /* Foundation.framework */,
+				218763F11443A2CB00F38AF7 /* CoreGraphics.framework */,
+				2187640E1443A2CB00F38AF7 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		218763F31443A2CB00F38AF7 /* HPCNews_test */ = {
+			isa = PBXGroup;
+			children = (
+				217E182C1756D66300A792F0 /* png */,
+				218763FC1443A2CB00F38AF7 /* HPCNews_testAppDelegate.h */,
+				218763FD1443A2CB00F38AF7 /* HPCNews_testAppDelegate.m */,
+				218764311443A3C800F38AF7 /* TwitterConnection.h */,
+				218764321443A3C800F38AF7 /* TwitterConnection.m */,
+				2187642E1443A3C800F38AF7 /* RootViewController.h */,
+				2187642F1443A3C800F38AF7 /* RootViewController.m */,
+				218764301443A3C800F38AF7 /* RootViewController.xib */,
+				218764291443A3C800F38AF7 /* DetailViewController.h */,
+				2187642A1443A3C800F38AF7 /* DetailViewController.m */,
+				2187642B1443A3C800F38AF7 /* DetailViewController.xib */,
+				218764271443A3C800F38AF7 /* bestnews.h */,
+				218764281443A3C800F38AF7 /* bestnews.m */,
+				2187642C1443A3C800F38AF7 /* HPCNewsCell.h */,
+				2187642D1443A3C800F38AF7 /* HPCNewsCell.m */,
+				21DD69FE145F0C5500FC49E4 /* HPCNewsCellFeed.h */,
+				21DD69FF145F0C5500FC49E4 /* HPCNewsCellFeed.m */,
+				217417D415F724FE00C3FC9A /* HPCNewsCellBData.h */,
+				217417D515F724FF00C3FC9A /* HPCNewsCellBData.m */,
+				2190EF061464773300F90C3A /* HPCNewsCellFav.h */,
+				2190EF071464773400F90C3A /* HPCNewsCellFav.m */,
+				2195134A15A78C59000B781B /* HPCNewsCellFeedWire.h */,
+				2195134B15A78C59000B781B /* HPCNewsCellFeedWire.m */,
+				2187643C1443A42A00F38AF7 /* HPCNewsFinder.h */,
+				2187643D1443A42A00F38AF7 /* HPCNewsFinder.m */,
+				21DD6A00145F0C5500FC49E4 /* HPCNewsFinderFeed.h */,
+				21DD6A01145F0C5500FC49E4 /* HPCNewsFinderFeed.m */,
+				217417D115F7239500C3FC9A /* HPCNewsFinderBData.h */,
+				217417D215F7239600C3FC9A /* HPCNewsFinderBData.m */,
+				2195134C15A78C59000B781B /* HPCNewsFinderFeedWire.h */,
+				2195134D15A78C5A000B781B /* HPCNewsFinderFeedWire.m */,
+				217417D715F725CD00C3FC9A /* NewsBData.h */,
+				217417D815F725CD00C3FC9A /* NewsBData.m */,
+				217417D915F725CE00C3FC9A /* NewsBData.xib */,
+				2195135115A78D7D000B781B /* NewsFeedWire.h */,
+				2195135215A78D7E000B781B /* NewsFeedWire.m */,
+				2195135315A78D7E000B781B /* NewsFeedWire.xib */,
+				21AA2C42145E88FF00BCD448 /* NewsFeed.h */,
+				21AA2C43145E88FF00BCD448 /* NewsFeed.m */,
+				21AA2C44145E88FF00BCD448 /* NewsFeed.xib */,
+				21AA2C37145E88C100BCD448 /* Favorites.h */,
+				21AA2C38145E88C100BCD448 /* Favorites.m */,
+				21AA2C39145E88C100BCD448 /* Favorites.xib */,
+				218763FF1443A2CB00F38AF7 /* MainWindow.xib */,
+				218763F41443A2CB00F38AF7 /* Supporting Files */,
+			);
+			path = HPCNews_test;
+			sourceTree = "<group>";
+		};
+		218763F41443A2CB00F38AF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2189650C144F78FE00D77C55 /* hpcicon@2x.png */,
+				21896512144F7AFD00D77C55 /* iTunesArtwork.png */,
+				2189650A144F78DE00D77C55 /* hpclaunchImage@2x.png */,
+				21896508144F78C800D77C55 /* hpcicon.png */,
+				218763F51443A2CB00F38AF7 /* HPCNews_test-Info.plist */,
+				218763F61443A2CB00F38AF7 /* InfoPlist.strings */,
+				218763F91443A2CB00F38AF7 /* main.m */,
+				218763FB1443A2CB00F38AF7 /* HPCNews_test-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		218764151443A2CB00F38AF7 /* HPCNews_testTests */ = {
+			isa = PBXGroup;
+			children = (
+				2187641B1443A2CB00F38AF7 /* HPCNews_testTests.h */,
+				2187641D1443A2CB00F38AF7 /* HPCNews_testTests.m */,
+				218764161443A2CB00F38AF7 /* Supporting Files */,
+			);
+			path = HPCNews_testTests;
+			sourceTree = "<group>";
+		};
+		218764161443A2CB00F38AF7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				218764171443A2CB00F38AF7 /* HPCNews_testTests-Info.plist */,
+				218764181443A2CB00F38AF7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		218763E81443A2CB00F38AF7 /* HPCNews_test */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218764211443A2CB00F38AF7 /* Build configuration list for PBXNativeTarget "HPCNews_test" */;
+			buildPhases = (
+				218763E51443A2CB00F38AF7 /* Sources */,
+				218763E61443A2CB00F38AF7 /* Frameworks */,
+				218763E71443A2CB00F38AF7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HPCNews_test;
+			productName = HPCNews_test;
+			productReference = 218763E91443A2CB00F38AF7 /* Instant HPC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2187640C1443A2CB00F38AF7 /* HPCNews_testTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 218764241443A2CB00F38AF7 /* Build configuration list for PBXNativeTarget "HPCNews_testTests" */;
+			buildPhases = (
+				218764081443A2CB00F38AF7 /* Sources */,
+				218764091443A2CB00F38AF7 /* Frameworks */,
+				2187640A1443A2CB00F38AF7 /* Resources */,
+				2187640B1443A2CB00F38AF7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				218764141443A2CB00F38AF7 /* PBXTargetDependency */,
+			);
+			name = HPCNews_testTests;
+			productName = HPCNews_testTests;
+			productReference = 2187640D1443A2CB00F38AF7 /* HPCNews_testTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		218763E01443A2CB00F38AF7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+			};
+			buildConfigurationList = 218763E31443A2CB00F38AF7 /* Build configuration list for PBXProject "HPCNews_test" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 218763DE1443A2CB00F38AF7;
+			productRefGroup = 218763EA1443A2CB00F38AF7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				218763E81443A2CB00F38AF7 /* HPCNews_test */,
+				2187640C1443A2CB00F38AF7 /* HPCNews_testTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		218763E71443A2CB00F38AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2197A626175827D9004B5A41 /* hpclaunchImage-568h@2x.png in Resources */,
+				2197A627175827D9004B5A41 /* hpclaunchImage.png in Resources */,
+				2197A628175827D9004B5A41 /* hpclaunchImage@2x.png in Resources */,
+				218763F81443A2CB00F38AF7 /* InfoPlist.strings in Resources */,
+				218764011443A2CB00F38AF7 /* MainWindow.xib in Resources */,
+				218764361443A3C800F38AF7 /* DetailViewController.xib in Resources */,
+				218764391443A3C800F38AF7 /* RootViewController.xib in Resources */,
+				21896509144F78C800D77C55 /* hpcicon.png in Resources */,
+				2189650D144F78FE00D77C55 /* hpcicon@2x.png in Resources */,
+				21896513144F7AFD00D77C55 /* iTunesArtwork.png in Resources */,
+				21AA2C3B145E88C100BCD448 /* Favorites.xib in Resources */,
+				21AA2C46145E88FF00BCD448 /* NewsFeed.xib in Resources */,
+				218D06521463AB9100E80A05 /* 56-cloud.png in Resources */,
+				218D06541463ABA700E80A05 /* 64-zap.png in Resources */,
+				218D06561463AC0D00E80A05 /* 09-chat-2.png in Resources */,
+				217417DB15F725D000C3FC9A /* NewsBData.xib in Resources */,
+				216F4082162D06D000E046F1 /* twitter-bird-light-bgs.png in Resources */,
+				216F4084162D07CF00E046F1 /* twitter-bird-dark-bgs.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2187640A1443A2CB00F38AF7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2187641A1443A2CB00F38AF7 /* InfoPlist.strings in Resources */,
+				2187641C1443A2CB00F38AF7 /* HPCNews_testTests.h in Resources */,
+				2195135515A78D7F000B781B /* NewsFeedWire.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2187640B1443A2CB00F38AF7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		218763E51443A2CB00F38AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2195135715A793A8000B781B /* HPCNewsFinderFeedWire.m in Sources */,
+				2195135815A793D7000B781B /* HPCNewsCellFeedWire.m in Sources */,
+				2195135615A7934D000B781B /* NewsFeedWire.m in Sources */,
+				218763FA1443A2CB00F38AF7 /* main.m in Sources */,
+				218763FE1443A2CB00F38AF7 /* HPCNews_testAppDelegate.m in Sources */,
+				218764341443A3C800F38AF7 /* bestnews.m in Sources */,
+				218764351443A3C800F38AF7 /* DetailViewController.m in Sources */,
+				218764371443A3C800F38AF7 /* HPCNewsCell.m in Sources */,
+				218764381443A3C800F38AF7 /* RootViewController.m in Sources */,
+				2187643A1443A3C800F38AF7 /* TwitterConnection.m in Sources */,
+				2187643E1443A42A00F38AF7 /* HPCNewsFinder.m in Sources */,
+				21AA2C3A145E88C100BCD448 /* Favorites.m in Sources */,
+				21AA2C45145E88FF00BCD448 /* NewsFeed.m in Sources */,
+				21DD6A02145F0C5500FC49E4 /* HPCNewsCellFeed.m in Sources */,
+				21DD6A03145F0C5500FC49E4 /* HPCNewsFinderFeed.m in Sources */,
+				2190EF081464773500F90C3A /* HPCNewsCellFav.m in Sources */,
+				217417D615F7250000C3FC9A /* HPCNewsCellBData.m in Sources */,
+				217417D315F7239700C3FC9A /* HPCNewsFinderBData.m in Sources */,
+				217417DA15F725D000C3FC9A /* NewsBData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		218764081443A2CB00F38AF7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2187641E1443A2CB00F38AF7 /* HPCNews_testTests.m in Sources */,
+				2195134E15A78C5A000B781B /* HPCNewsCellFeedWire.m in Sources */,
+				2195134F15A78C5A000B781B /* HPCNewsFinderFeedWire.m in Sources */,
+				2195135415A78D7F000B781B /* NewsFeedWire.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		218764141443A2CB00F38AF7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 218763E81443A2CB00F38AF7 /* HPCNews_test */;
+			targetProxy = 218764131443A2CB00F38AF7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		218763F61443A2CB00F38AF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				218763F71443A2CB00F38AF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		218763FF1443A2CB00F38AF7 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				218764001443A2CB00F38AF7 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		218764181443A2CB00F38AF7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				218764191443A2CB00F38AF7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2197A620175827D9004B5A41 /* hpclaunchImage-568h@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2197A621175827D9004B5A41 /* en */,
+			);
+			name = "hpclaunchImage-568h@2x.png";
+			sourceTree = "<group>";
+		};
+		2197A622175827D9004B5A41 /* hpclaunchImage.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2197A623175827D9004B5A41 /* en */,
+			);
+			name = hpclaunchImage.png;
+			sourceTree = "<group>";
+		};
+		2197A624175827D9004B5A41 /* hpclaunchImage@2x.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2197A625175827D9004B5A41 /* en */,
+			);
+			name = "hpclaunchImage@2x.png";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		218689A51450A57C00EF5560 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beckersweet Technology Inc.";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "Instant HPC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = IPhone;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		218689A61450A57C00EF5560 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beckersweet Technology Inc.";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPCNews_test/HPCNews_test-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "HPCNews_test/HPCNews_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Instant HPC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Distribution;
+		};
+		218689A71450A57C00EF5560 /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HPCNews_test.app/HPCNews_test";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos5.0]" = "iPhone Distribution: Barbara C Collignon";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPCNews_test/HPCNews_test-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "HPCNews_testTests/HPCNews_testTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos5.0]" = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Distribution;
+		};
+		2187641F1443A2CB00F38AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Barbara C Collignon (H99SPGEACY)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "Instant HPC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = IPhone;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		218764201443A2CB00F38AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Barbara C Collignon (H99SPGEACY)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "Instant HPC";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = YES;
+				TARGETED_DEVICE_FAMILY = IPhone;
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		218764221443A2CB00F38AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPCNews_test/HPCNews_test-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "HPCNews_test/HPCNews_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Instant HPC";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		218764231443A2CB00F38AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPCNews_test/HPCNews_test-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "HPCNews_test/HPCNews_test-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				PRODUCT_NAME = "Instant HPC";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		218764251443A2CB00F38AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HPCNews_test.app/HPCNews_test";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos5.0]" = "iPhone Developer: Barbara C Collignon (H99SPGEACY)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPCNews_test/HPCNews_test-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "HPCNews_testTests/HPCNews_testTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos5.0]" = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		218764261443A2CB00F38AF7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HPCNews_test.app/HPCNews_test";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos5.0]" = "iPhone Developer: Barbara C Collignon (H99SPGEACY)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HPCNews_test/HPCNews_test-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "HPCNews_testTests/HPCNews_testTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				"PROVISIONING_PROFILE[sdk=iphoneos5.0]" = "";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		218763E31443A2CB00F38AF7 /* Build configuration list for PBXProject "HPCNews_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2187641F1443A2CB00F38AF7 /* Debug */,
+				218764201443A2CB00F38AF7 /* Release */,
+				218689A51450A57C00EF5560 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		218764211443A2CB00F38AF7 /* Build configuration list for PBXNativeTarget "HPCNews_test" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				218764221443A2CB00F38AF7 /* Debug */,
+				218764231443A2CB00F38AF7 /* Release */,
+				218689A61450A57C00EF5560 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+		218764241443A2CB00F38AF7 /* Build configuration list for PBXNativeTarget "HPCNews_testTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				218764251443A2CB00F38AF7 /* Debug */,
+				218764261443A2CB00F38AF7 /* Release */,
+				218689A71450A57C00EF5560 /* Distribution */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Distribution;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 218763E01443A2CB00F38AF7 /* Project object */;
+}
