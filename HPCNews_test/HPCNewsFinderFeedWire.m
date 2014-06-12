@@ -11,7 +11,7 @@
 
 @interface NSString (parsing) 
 
-// Disgusting parsing
+//Painful parsing
 -(NSString*) removeLink;
 -(NSString*) removeLink2;
 -(NSString*) removeLink3;

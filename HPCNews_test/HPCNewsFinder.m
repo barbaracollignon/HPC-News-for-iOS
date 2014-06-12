@@ -11,6 +11,7 @@
 
 @interface NSString (parsing) 
 
+//Painful parsing
 -(NSString*) replace_em ;
 -(NSString*) find_link1 ;
 -(NSString*) removeLink;
